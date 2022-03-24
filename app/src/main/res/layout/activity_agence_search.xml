@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/portion_search"
+    android:background="@color/WhiteColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+
+        >
+
+        <customfonts.MyTextView_Roboto_Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Veuillez selectionner par ordre decroissante une entité administrative (province, ville ou commune) et la bouteille pour ainsi procéder à la recherche des agences Coete Gaz."
+            android:textColor="@color/BcGridbis"
+            android:textSize="9sp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:id="@+id/text_help"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="8.4dp"
+            android:background="@drawable/rect_grid"
+            android:orientation="vertical">
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/square_background"
+                android:spinnerMode="dialog"
+                android:id="@+id/spinner_province"
+                android:textColor="@color/fbutton_color_peter_river"
+                android:textSize="15sp"
+                app:hintText="-- Province -- *"
+
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="8.4dp"
+            android:background="@drawable/rect_grid"
+            android:orientation="vertical">
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/square_background"
+                android:spinnerMode="dialog"
+                android:id="@+id/spinner_ville"
+                android:textColor="@color/fbutton_color_peter_river"
+                android:textSize="15sp"
+                app:hintText="-- Ville -- *"
+
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="8.4dp"
+            android:background="@drawable/rect_grid"
+            android:orientation="vertical">
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/square_background"
+                android:spinnerMode="dialog"
+                android:id="@+id/spinner_commune"
+                android:textColor="@color/fbutton_color_peter_river"
+                android:textSize="15sp"
+                app:hintText="-- Commune -- *"
+
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="8.4dp"
+            android:background="@drawable/rect_grid"
+            android:orientation="vertical">
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/square_background"
+                android:spinnerMode="dialog"
+                android:id="@+id/spinner_type_produit"
+                android:textColor="@color/fbutton_color_peter_river"
+                android:textSize="15sp"
+                app:hintText="-- Votre bouteille -- *"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+        <customfonts.MyTextView_Roboto_Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/arrondi_blue"
+            android:paddingLeft="53dp"
+            android:paddingTop="13dp"
+            android:paddingRight="53dp"
+            android:id="@+id/BtSearch"
+            android:paddingBottom="13dp"
+            android:text="Recherchez"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="18sp" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit_load"
+            style="@style/SpinKitView.Large.FadingCircle"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:fitsSystemWindows="true"
+            android:indeterminate="true"
+            android:layout_gravity="center_horizontal"
+            app:SpinKit_Color="@color/android_blue1"
+            android:visibility="gone"
+
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/BtFlotList"
+        android:layout_width ="wrap_content"
+        android:layout_height ="wrap_content"
+        android:layout_gravity ="bottom|end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat ="@drawable/ic_location"
+        android:layout_margin ="16dp"
+        android:layout_marginBottom="70dp"
+        android:visibility="visible"
+        />
+
+</RelativeLayout>
+
+

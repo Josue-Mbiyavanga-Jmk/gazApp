@@ -1,0 +1,66 @@
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:shrinkMode="safe"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+
+
+
+        <!-- <include layout="@layout/contenain_home"/>-->
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ConteneurBase"
+        android:background="#FFF"
+        android:layout_marginBottom="0dp"
+
+        >
+
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/BtFlotList"
+        android:visibility="visible"
+        android:layout_width ="wrap_content"
+        android:layout_height ="wrap_content"
+        android:layout_gravity ="bottom|start"
+        app:srcCompat ="@drawable/ic_search"
+        android:layout_margin ="16dp"
+        android:tint="@color/white"
+        android:layout_marginBottom="70dp"
+        app:elevation="0dp"
+        app:pressedTranslationZ="0dp"
+        android:alpha="0.4"
+        app:backgroundTint="@color/BgVert"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+

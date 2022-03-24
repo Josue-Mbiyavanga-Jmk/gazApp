@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/circle1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/circlebarre_focus"
+
+
+            />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/circlebarre"
+            android:id="@+id/circle2"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/circle1"
+            />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_above="@+id/bottom">
+
+        <!-- debut première rendue des composant -->
+        <include
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_view_register_steep_on"
+            layout="@layout/view_client_steep_on"
+            android:visibility="visible"
+
+            />
+        <!-- debut deuxième rendue des composant -->
+        <include
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_view_register_two"
+            layout="@layout/view_client_steep_last"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_above="@+id/bottom"
+        android:id="@+id/view_bare"
+        android:background="@color/BcGridbis"/>
+    <!-- debut des actions des buttons bas-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:id="@+id/bottom"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_alignParentRight="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/BcGridbis"
+            android:id="@+id/BtSave"
+            android:text="Continuer"
+            android:drawableRight="@mipmap/ic_imgsuivants"
+            android:background="@drawable/back_pressed"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/BtPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/back_pressed"
+            android:drawableLeft="@mipmap/ic_preview"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Précedent"
+            android:visibility="visible"
+            android:textColor="@color/BcGridbis"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

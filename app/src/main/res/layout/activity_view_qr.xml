@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ConteneurBase"
+    tools:shrinkMode="safe"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toobar_custm"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        >
+
+
+        <ImageView
+            android:background="@drawable/square_blue_press"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/bt_back"
+            android:tint="@color/colWhite"
+            app:srcCompat="@drawable/ic_black_navigation"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/bt_back"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="QR code"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_title"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/toobar_custm"
+        >
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="11sp"
+            android:layout_marginRight="15dp"
+            android:text="Ce code QR ci-dessous permet une fois que vous êtes dans une agence de coete gaz de pouvoir vous identifier afin de mettre à jours certaines de vos informations."
+            android:layout_toRightOf="@+id/bthelp56"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/txt_token"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contenaireHelp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <ImageView
+           android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:id="@+id/imag_qr_code"
+            app:srcCompat="@drawable/ic_qr_code"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

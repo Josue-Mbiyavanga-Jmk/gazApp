@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ActivityStatistiqueUser">
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:id="@+id/toobar_custm"
+    android:layout_alignParentTop="true"
+    android:background="@color/colorPrimary"
+    >
+
+
+    <ImageView
+        android:background="@drawable/square_blue_press"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/bt_back"
+        android:tint="@color/colWhite"
+        app:srcCompat="@drawable/ic_black_navigation"/>
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/bt_back"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Statistique"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:id="@+id/txt_title"
+        />
+
+
+
+</RelativeLayout>
+
+<!--Pour defiler et voir tous les graphique -->
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toobar_custm"
+    android:layout_marginTop="0dp"
+    >
+    <!--Conteneur parent -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <customfonts.MyTextView_Roboto_Regular
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/helps_stat"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="9sp"
+            android:paddingTop="0dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <customfonts.MyTextView_Roboto_Regular
+            android:id="@+id/title_diag"
+            android:layout_below="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diagramme circulaire"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="9sp"
+            android:paddingTop="0dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/PieChart"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/title_diag"
+            />
+        <LinearLayout
+            android:id="@+id/pieComment"
+            android:layout_below="@+id/PieChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:orientation="horizontal">
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total :"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="9sp"
+                android:paddingTop="0dp"
+                android:paddingRight="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="1dp"
+                android:paddingLeft="10dp"
+                android:textAlignment="center"
+                />
+            <customfonts.MyTextView_Roboto_Regular
+                android:id="@+id/txt_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:paddingTop="0dp"
+                android:paddingRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:paddingLeft="2dp"
+                android:textAlignment="center"
+                />
+            <customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/help_bouteilles"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="10sp"
+                android:id="@+id/txt_bouteille1"
+                android:paddingTop="0dp"
+                android:paddingRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="1dp"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/separate"
+            android:layout_below="@+id/pieComment"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="35dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/NewGridLoginBckg"/>
+
+        <customfonts.MyTextView_Roboto_Regular
+            android:id="@+id/title_diag1"
+            android:layout_below="@+id/separate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diagramme à bandes"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="9sp"
+            android:paddingTop="0dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"/>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/BarChart"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@+id/title_diag1"
+            android:layout_marginBottom="1dp"
+            />
+
+        <customfonts.MyTextView_Roboto_Regular
+            android:id="@+id/description"
+            android:layout_below="@+id/BarChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/help_bouteille_legend"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="10sp"
+            android:paddingTop="0dp"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10dp"
+            android:gravity="right"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/pieComment1"
+            android:layout_below="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total :"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="9sp"
+                android:paddingTop="0dp"
+                android:paddingRight="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="1dp"
+                android:paddingLeft="10dp"
+                android:textAlignment="center"
+                />
+            <customfonts.MyTextView_Roboto_Regular
+                android:id="@+id/txt_total_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:paddingTop="0dp"
+                android:paddingRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:paddingLeft="2dp"
+                android:textAlignment="center"
+                />
+            <customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="poches sorties pour tous les groupes sanguins."
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="10sp"
+                android:id="@+id/txt_bouteille2"
+                android:paddingTop="0dp"
+                android:paddingRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="1dp"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

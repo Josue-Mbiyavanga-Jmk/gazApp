@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <customfonts.MyTextView_Roboto_Regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remplissez les informations de localisation ci-dessous pour finir l'enregistrement du client"
+        android:textColor="@color/BcGridbis"
+        android:textSize="11.5sp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="10dp"
+        android:textAlignment="center"
+        android:layout_marginTop="0dp"/>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rect_grid"
+            android:orientation="vertical">
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/square_background"
+                android:spinnerMode="dialog"
+                android:id="@+id/spinner_province"
+                android:textColor="@color/BcGridbis"
+                android:textSize="15sp"
+                app:hintText="-- Votre province -- *"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rect_grid"
+        android:orientation="vertical">
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/square_background"
+            android:spinnerMode="dialog"
+            android:id="@+id/spinner_ville"
+            android:textColor="@color/BcGridbis"
+            android:textSize="15sp"
+            app:hintText="-- Votre ville -- *"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rect_grid"
+        android:orientation="vertical">
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/square_background"
+            android:spinnerMode="dialog"
+            android:id="@+id/spinner_commune"
+            android:textColor="@color/BcGridbis"
+            android:textSize="15sp"
+            app:hintText="-- Votre commune -- *"
+
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rect_grid"
+        android:orientation="vertical">
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/square_background"
+            android:spinnerMode="dialog"
+            android:id="@+id/spinner_quartier"
+            android:textColor="@color/BcGridbis"
+            android:textSize="15sp"
+            app:hintText="-- Votre quartier -- *"
+
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rect_grid"
+        >
+
+        <EditText
+            style="@style/edit_input_style_app"
+            android:layout_marginLeft="15.5dp"
+            android:hint="Avenue"
+            android:inputType="text"
+            android:id="@+id/edt_avenue"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rect_grid"
+        >
+
+        <EditText
+            style="@style/edit_input_style_app"
+            android:layout_marginLeft="15.5dp"
+            android:hint="Numéro"
+            android:inputType="text"
+            android:id="@+id/edt_numero" />
+    </LinearLayout>
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit_load_save"
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fitsSystemWindows="true"
+        android:indeterminate="true"
+        android:layout_gravity="center_horizontal"
+        app:SpinKit_Color="@color/android_blue"
+        android:visibility="visible"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sax.inc.coetegaz">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.hardware.CAMERA" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true" />
+
+    <application
+        android:name=".App.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_log_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".Activities.ActivityFlashScream"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Autres Activity -->
+        <activity
+            android:name=".Activities.ActivityLogin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppActivityPersonnalise" />
+        <activity
+            android:name=".Activities.ActivityAbout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppActivityPersonnalise"/>
+        <activity
+            android:name=".Activities.ActivityAgenceAdd"
+            android:parentActivityName=".Activities.ActivityHomeAdmin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ActivityAgencesList"
+            android:parentActivityName=".Activities.ActivityAgenceRecherche"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ActivityMaps"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppActivityPersonnalise" /> <!-- Agence Activity -->
+        <activity
+            android:name=".Activities.ActivityAgenceListSearch"
+            android:parentActivityName=".Activities.ActivityMaps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ActivityAgenceRecherche"
+            android:parentActivityName=".Activities.ActivityHomeOtherUser"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".Activities.ActivityAgenceRegister"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" /> <!-- Agent Activity -->
+        <activity
+            android:name=".Activities.ActivityAgentAdd"
+            android:parentActivityName=".Activities.ActivityHomeAdmin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ActivityAgentRegister"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppActivityPersonnalise" /> <!-- Client Activity -->
+        <activity
+            android:name=".Activities.ActivityClientSearch"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppActivityPersonnalise" />
+        <activity
+            android:name=".Activities.ActivityClientRegister"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppActivityPersonnalise" />
+        <activity
+            android:name=".Activities.ActivityClientAdd"
+            android:parentActivityName=".Activities.ActivityHomeOtherUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ActivityClientDetail"
+            android:theme="@style/AppActivityPersonnalise" /> <!-- Home Activity -->
+        <activity
+            android:name=".Activities.ActivityHomeOtherUser"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppActivityPersonnalise" />
+        <activity
+            android:name=".Activities.ActivityHomeAdmin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppActivityPersonnalise" /> <!-- Mouvement activity -->
+        <activity
+            android:name=".Activities.ActivityMouvementAdd"
+            android:parentActivityName=".Activities.ActivityMouvementList"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".Activities.ActivityMouvementList"
+            android:parentActivityName=".Activities.ActivityHomeOtherUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ActivityStatOtherUserMenuPrincipal"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppActivityPersonnalise" />
+        <activity
+            android:name=".Activities.ActivityClientViewQR"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <!-- Statiqtique activity -->
+        <activity android:name=".Activities.ActivityStatistiqueUser"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

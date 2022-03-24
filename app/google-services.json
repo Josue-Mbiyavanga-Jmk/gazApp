@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "820586213739",
+    "firebase_url": "https://coetegaz-e8b05.firebaseio.com",
+    "project_id": "coetegaz-e8b05",
+    "storage_bucket": "coetegaz-e8b05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820586213739:android:734724e189fc1187529c2e",
+        "android_client_info": {
+          "package_name": "com.sax.inc.coetegaz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820586213739-ein780mia7lsbev5jjuhg74i16hfbf34.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sax.inc.coetegaz",
+            "certificate_hash": "3fe64876525f16080270f10fe55504fc3affae64"
+          }
+        },
+        {
+          "client_id": "820586213739-llle9pb15a3idprom13gpdmqsd8b36t2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPLB3Qd1CxjFOmNVCsSyt4kBYnNUjuSfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820586213739-llle9pb15a3idprom13gpdmqsd8b36t2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

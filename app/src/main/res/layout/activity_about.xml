@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:shrinkMode="safe"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toobar_custm"
+        android:layout_alignParentTop="true"
+        android:background="@color/md_material_blue_600"
+        >
+
+
+        <ImageView
+            android:background="@drawable/square_blue_press"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/bt_back"
+            android:tint="@color/colWhite"
+            app:srcCompat="@drawable/ic_black_navigation"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/bt_back"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="A propos"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_title"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toobar_custm"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/i1"
+            style="@style/img_lab"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/marker" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="version 1.0.0"
+            android:gravity="clip_vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/i1"
+            android:id="@+id/txt_help"
+            android:layout_centerHorizontal="true"
+
+
+
+            />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_help"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            >
+
+
+
+
+
+            <RelativeLayout
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_below="@+id/txt_help"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="0dp"
+                android:background="@color/md_material_blue_600">
+
+
+                <LinearLayout
+                    android:layout_marginBottom="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical"
+                    android:id="@+id/contenaire_button"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coete GAZ"
+                        android:gravity="left"
+                        android:paddingBottom="10dp"
+                        android:layout_toRightOf="@+id/i1"
+                        android:textColor="@color/colWhite"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:textSize="19dp"
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="COETE Gaz est une compagnie qui commercialise le gaz à usage domestique et industriel dans différentes bouteilles de 6 kg, 9 kg, 12 kg et 45 Kg."
+                        android:gravity="center_vertical"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_toRightOf="@+id/i1"
+                        android:textColor="@color/colWhite"
+                        android:textSize="12dp"
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mise à jour 14-04-2020"
+                    android:gravity="center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colWhite"
+                    android:textSize="8dp"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25.3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/square_background_grid"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:text="Vous pouvez aussi nous contacter en dehors de l'application"
+            android:id="@+id/txt_help_contact"
+            android:textColor="@color/BcGridbis"
+            android:textSize="10.4sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:text="@string/txt_help_mail"
+            android:id="@+id/txt_mail"
+            android:textColor="@color/BcGridbis"
+            android:textSize="10.4sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/txt_help_tel"
+            android:id="@+id/txt_tel"
+            android:textColor="@color/BcGridbis"
+            android:textSize="10.4sp" />
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="8sp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/txt_copy_right"
+        android:textColor="#c1bdbd"
+        />
+</RelativeLayout>
+
+

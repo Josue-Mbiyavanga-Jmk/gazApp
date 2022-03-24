@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toobar_custm"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        >
+
+
+        <ImageView
+            android:background="@drawable/square_blue_press"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/bt_back"
+            android:tint="@color/colWhite"
+            app:srcCompat="@drawable/ic_black_navigation"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/bt_back"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Infos client"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_title"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/contenaire_panier">
+
+            <ImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/FoodImagePanier"
+                android:tint="@color/colWhite"
+                app:srcCompat="@drawable/ic_add_shopping"
+                />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="-10dp">
+
+                <com.nex3z.notificationbadge.NotificationBadge
+                    android:id="@+id/badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FFF"
+                    app:nbMaxTextLength="3" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/toobar_custm"
+        android:layout_marginTop="25dp">
+
+    <ImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/FoodImage_Id"
+        app:srcCompat="@drawable/ic_user_use"
+        />
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_name"
+        android:layout_below="@+id/layout_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="nom complet"
+            android:textColor="#262628"
+            android:textSize="15sp" />
+       <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/img_status"
+                android:src="@drawable/token_client"
+                />
+
+            <TextView
+                android:id="@+id/txt_token"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="token client"
+                android:textColor="#9b9b9b"
+                android:textSize="13sp" />
+
+        </LinearLayout>-->
+
+        <TextView
+            android:id="@+id/txt_group_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ce donneur n'a pas eu à signaler son groupe sanguin. Cliquez sur ND au dessus pour mettre à jour son groupe."
+            android:textColor="@color/red"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:paddingRight="26dp"
+            android:paddingLeft="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/layout_name"
+
+        android:id="@+id/other_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="16dp"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <ImageView
+                android:padding="3dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/bthelp4"
+                app:srcCompat="@drawable/ic_location_b"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse donneur"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/bthelp4"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/txt_adresse"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="#5d5d5d" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/bthelp5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="3dp"
+                app:srcCompat="@drawable/ic_contact_book" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numéro de téléphone"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/bthelp5"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/txt_num_tel"
+                />
+
+            <ImageView
+                android:id="@+id/Btcontact"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="5dp"
+                android:paddingTop="2dp"
+                android:tint="@color/android_blue"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/square_blue"
+                app:srcCompat="@drawable/ic_call" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="#5d5d5d" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView
+                android:padding="3dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/bthelp56"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/ic_user_lock"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="token client"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/bthelp56"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/txt_token"
+                />
+
+            <ImageView
+                android:id="@+id/img_qr"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="5dp"
+                android:paddingTop="2dp"
+                android:tint="@color/android_blue"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/square_blue"
+                app:srcCompat="@drawable/ic_scan_qr" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="#5d5d5d" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView
+                android:padding="3dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/img_abonnement"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/ic_abon_list"
+                android:layout_marginRight="10dp"
+                />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spinner_abonnement"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/img_abonnement"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/square_background"
+                android:spinnerMode="dialog"
+                android:textColor="@color/BcGridbis"
+                android:textSize="13sp"
+                app:hintText="-- Abonnement du client -- *"
+
+            />
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+        <ImageView
+            android:padding="3dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/img_input"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/input_number"
+            android:layout_marginRight="10dp"
+            />
+
+        <EditText
+            android:id="@+id/edit_quantite"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/img_input"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="0dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/square_background"
+            android:textColor="@color/BcBlack"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:hint="quantité initiale"
+
+            />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="#5d5d5d" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rect_grid"
+                android:layout_centerInParent="true"
+                android:paddingTop="13dp"
+                android:paddingLeft="43dp"
+                android:paddingRight="43dp"
+                android:id="@+id/BtAddPanier"
+                android:paddingBottom="13dp"
+                android:text="Ajouter au Panier"
+                android:textColor="@color/BcGridbis"
+                android:textSize="16sp" />
+
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <customfonts.MyTextView_Roboto_Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/arrondi_rose"
+            android:paddingLeft="53dp"
+            android:paddingTop="13dp"
+            android:paddingRight="53dp"
+            android:id="@+id/Btcontact"
+            android:gravity="center_horizontal"
+            android:paddingBottom="13dp"
+            android:layout_centerHorizontal="true"
+            android:text="Appeler donneur"
+            android:textColor="@color/android_rose"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+
+    </LinearLayout>-->
+
+
+</RelativeLayout>

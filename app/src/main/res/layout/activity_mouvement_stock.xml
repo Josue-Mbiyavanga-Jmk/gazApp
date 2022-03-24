@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toobar_custm"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        >
+
+
+        <ImageView
+            android:background="@drawable/square_blue_press"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/bt_back"
+            android:tint="@color/colWhite"
+            app:srcCompat="@drawable/ic_black_navigation"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/bt_back"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Nouvel entrée"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_title"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20.4dp"
+        android:background="@drawable/rect_grid"
+        android:orientation="vertical">
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinner_groupe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/square_background"
+            android:spinnerMode="dialog"
+            android:textColor="@color/BcGridbis"
+            android:textSize="15sp"
+            app:hintText="-- Type produit  -- *"
+
+
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="13dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10.4dp"
+        android:background="@drawable/rect_grid"
+        >
+
+        <EditText
+            style="@style/edit_input_style_app"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15.5dp"
+            android:layout_width="match_parent"
+            android:hint="Quantité"
+            android:inputType="number"
+            android:layout_marginRight="15.5dp"
+            android:textSize="15.4sp"
+            android:id="@+id/edt_qt"
+           />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rect_grid"
+        >
+
+        <EditText
+            style="@style/edit_input_style_app"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15.5dp"
+            android:gravity="top"
+            android:hint="Votre observation ici"
+            android:inputType="text|textMultiLine|textCapSentences"
+            android:padding="5dp"
+            android:id="@+id/edt_observation"
+            />
+    </LinearLayout>
+
+
+    <customfonts.MyTextView_Roboto_Regular
+        android:id="@+id/BtAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rect_grid"
+        android:paddingLeft="53dp"
+        android:paddingTop="13dp"
+        android:paddingRight="53dp"
+        android:paddingBottom="13dp"
+        android:text="Enregistrer"
+        android:textColor="@color/BcGridbis"
+        android:textSize="18sp" />
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit_load"
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:fitsSystemWindows="true"
+        android:indeterminate="true"
+        app:SpinKit_Color="@color/BgVert"
+
+
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Coete Gaz</string>
+    <string name="volley_network_error">Erreur du réseau</string>
+    <string name="volley_server_error">Erreur du serveur</string>
+    <string name="volley_auth_error">Echec d\'authentification</string>
+    <string name="volley_parse_error">Erreur de parsing</string>
+    <string name="volley_no_connection_error">Aucune connexion</string>
+    <string name="volley_timeout_error">Délai d\'attente depassé</string>
+    <string name="txt_requid">Ce champ est obligatoire</string>
+    <string name="txt_copy_right">© 2020 Sax Inc. Tous droits réservés</string>
+    <string name="txt_help_about">Coete Gaz <u> A propos de</u></string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="txt_help_mail">E-mail : <u>corporate@coete-rdc.com</u></string>
+    <string name="txt_help_tel">Téléphone : <u>+243890204835</u></string>
+    <string name="txt_help_flashscream">Plus qu\'une simple source d\'énergie, COETE Gaz vous propose des solutions adaptées selon votre secteur d\'activité en vous assurant un rendement optimal.</string>
+
+    <string name="helps_stat">Visualiser tous les mouvements des %s des bouteilles en stock en chiffre, par capacité et selon des périodes bien spécifiques</string>
+    <string name="help_bouteilles">Bouteille(s) de gaz %s pour tous les types de produit.</string>
+    <string name="help_bouteille_legend">Bouteille de gaz %s par type produit en nombre</string>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="txt_halp_app">COETE Gaz est une compagnie qui commercialise le gaz à usage domestique et industriel dans différentes bouteilles de 6 kg, 9 kg, 12 kg et 45 Kg.</string>
+    <string-array name="produit_type_list">
+        <item>6 Kg</item>
+        <item>9 Kg</item>
+        <item>12 Kg</item>
+        <item>45 Kg</item>
+    </string-array>
+</resources>

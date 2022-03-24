@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <customfonts.MyTextView_Roboto_Regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remplissez les champs ci-dessous et passez à l'étape suivante pour compléter d'autres ..."
+        android:textColor="@color/BcGridbis"
+        android:textSize="11.5sp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="10dp"
+        android:textAlignment="center"
+        android:layout_marginTop="0dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="13dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rect_grid"
+            >
+
+            <EditText
+                style="@style/edit_input_style_app"
+                android:layout_marginLeft="15.5dp"
+                android:hint="Nom complet"
+                android:inputType="text"
+                android:id="@+id/edt_name_complet"
+              />
+        </LinearLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="13dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rect_grid"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#00000000"
+            android:text="+243 | "
+            android:layout_marginRight="10dp"
+            android:textColor="@color/BcGridbis"
+            android:textSize="15.4sp" />
+        <EditText
+            style="@style/edit_input_style_app"
+            android:layout_marginLeft="55.5dp"
+            android:layout_width="match_parent"
+            android:hint="Téléphone"
+            android:inputType="phone"
+            android:maxLength="9"
+            android:textSize="15.4sp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/edt_phone"
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="13dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rect_grid"
+        >
+
+        <EditText
+            style="@style/edit_input_style_app"
+            android:layout_marginLeft="15.5dp"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:id="@+id/edt_email"
+           />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        >
+
+        <customfonts.MyTextView_Roboto_Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cochez les types produits dont le client souhaite s'abonner."
+            android:textColor="@color/BcGridbis"
+            android:textSize="11.5sp"
+            android:paddingTop="0dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp"/>
+
+
+            <CheckBox
+                android:id="@+id/ch6kg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:onClick="onCheckClicked"
+                android:text="Bouteille 6 Kg"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:id="@+id/ch9kg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:onClick="onCheckClicked1"
+                android:text="Bouteille 9 kg"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+             <CheckBox
+                 android:id = "@+id/ch12kg"
+                 android:layout_width = "wrap_content"
+                 android:layout_height = "wrap_content"
+                 android:text = "Bouteille 12 kg"
+                 android:textSize="12sp"
+                 android:textAllCaps="false"
+                 android:onClick = "onCheckClicked2" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

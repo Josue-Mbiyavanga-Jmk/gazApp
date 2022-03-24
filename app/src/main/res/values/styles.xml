@@ -1,0 +1,215 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Custom theme. -->
+    <style name="AppThemeTitlePersonne" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/BgTab</item>
+        <item name="colorPrimaryDark">@color/BgVert_achirer</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TwitterTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/TwitterColor</item>
+        <item name="colorPrimaryDark">@color/GrisColor</item>
+        <item name="colorAccent">@color/TwitterColor</item>
+        <item name="android:textColorPrimary">@color/TwitterColor</item>
+
+    </style>
+
+    <style name="TwitterThemebis" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/TwitterColor</item>
+        <item name="colorPrimaryDark">@color/GrisColor</item>
+        <item name="colorAccent">@color/BcGridbis</item>
+        <item name="android:textColorPrimary">@color/BcGridbis</item>
+
+    </style>
+
+    <style name="WhiteTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/TwitterColor</item>
+        <item name="android:textColorPrimary">@color/TwitterColor</item>
+
+    </style>
+
+    <style name="AppRoseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/android_rose</item>
+        <item name="colorPrimaryDark">@color/android_rose_dark</item>
+        <item name="colorAccent">@color/snackBarColorNotificationSuccess</item>
+
+    </style>
+
+    <style name="AppThemeNoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+
+        <!-- Customize your theme here. -->
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Button</item>
+        <item name="material_dialog_background">#FFFFFF</item>
+        <item name="material_dialog_title_text_color">#000000</item>
+        <item name="material_dialog_message_text_color">#5F5F5F</item>
+        <item name="material_dialog_positive_button_color">@color/colorAccent</item>
+        <item name="material_dialog_positive_button_text_color">#FFFFFF</item>
+        <item name="material_dialog_negative_button_text_color">@color/colorAccent</item>
+    </style>
+
+    <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colWhite</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+
+    <style name="AppThemeTitlePersonneBleuColor" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/BgTab</item>
+        <item name="colorPrimaryDark">@color/bc1</item>
+        <item name="colorAccent">@color/bc1</item>
+    </style>
+
+    <style name="AppActivityPersonnalise" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/BgVert</item>
+        <!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="colorPrimaryDark">@color/GrisColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+
+
+
+    <style name="fltBt_redefine_color" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">@color/BgTab</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+
+
+    <style name="img_lab">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+
+
+    <style name="txt_help_menu">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="txt_titre_help_menu">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="aligne_setting_fields">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="setting_images_left">
+        <item name="android:layout_width">5dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@color/BgVert</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:tint">@color/colWhite</item>
+    </style>
+
+    <style name="setting_images_left_button">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@color/BgVert</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:tint">@color/colWhite</item>
+    </style>
+
+
+    <style name="setting_images_fields_blue">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@color/NewBlue</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:tint">@color/colWhite</item>
+    </style>
+
+    <style name="aligne_editext">
+        <item name="android:layout_marginLeft">10.6dp</item>
+        <item name="android:layout_marginRight">10.6dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+
+    </style>
+
+    <style name="setting_images_fields_left">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@color/BcGridbis</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:tint">@color/BgTab</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorControlNormal">@color/BgVert</item>
+        <item name="colorControlActivated">@color/android_orange_dark</item>
+        <item name="textColorAlertDialogListItem">@android:color/white</item>
+        <item name="colorAccent">@color/BcGridbis</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:windowBackground">@drawable/background_dialog</item>
+    </style>
+
+    <style name="MonthPickerDialogStyle" >
+        <item name="monthBgColor">@color/WhiteColor</item>
+        <item name="monthBgSelectedColor">@color/TwitterColor</item>
+        <item name="monthFontColorSelected">@color/BcBlack</item>
+        <item name="monthFontColorNormal">@color/BcBlack</item>
+        <item name="monthFontColorDisabled">@color/BcBlack</item>
+
+        <item name="headerBgColor">@color/BcGridbis</item>
+        <item name="headerFontColorSelected">#fff</item>
+        <item name="headerFontColorNormal">#85FFFFFF</item>
+        <item name="headerTitleColor">#fff</item>
+
+        <item name="dialogActionButtonColor">@color/TwitterColor</item>
+    </style>
+
+    <style name="Theme.UserDialog" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:editTextColor">@color/colWhite</item>
+    </style>
+
+    <style name="edit_input_style_app">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColor">@android:color/secondary_text_light</item>
+        <item name="android:textColorHint">@color/BcGridbis</item>
+        <item name="android:textSize">15.4sp</item>
+    </style>
+
+</resources>
